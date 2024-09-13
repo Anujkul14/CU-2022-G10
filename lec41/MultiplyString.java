@@ -6,7 +6,7 @@ public class MultiplyString {
             int n1 =  num1.length();
             int n2 =  num2.length();
             int[] product = new int[n1 + n2];
-            idx = n1 + n2 - 1;
+            int idx = n1 + n2 - 1;
             for(int i = n2 - 1;i >= 0;i--)
             {
                 for(int j = n1 - 1;j >= 0;j--)
@@ -21,7 +21,7 @@ public class MultiplyString {
             for(int i = idx;i >= 0;i++)
             {
                 int temp = (product[i] + carry) % 10;
-                int carry = (product[i] + carry) / 10;
+                carry = (product[i] + carry) / 10;
                 product[i] = temp;
             }
             StringBuilder sb = new StringBuilder();
