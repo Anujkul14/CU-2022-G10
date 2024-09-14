@@ -1,4 +1,4 @@
-package lec40;
+package lec39;
 
 class RunnableClass implements Runnable
 {
